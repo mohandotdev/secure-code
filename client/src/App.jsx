@@ -6,11 +6,12 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-  const [payload, setPayload] = useState();
+  const [payload, setPayload] = useState({});
   const [result, setResult] = useState([]);
 
   const handleInputChange = (event) => {
     const text = event.target.value;
+    console.log(text);
     const parsedText = JSON.stringify({ code: text });
     setPayload(parsedText);
   };
@@ -18,11 +19,8 @@ function App() {
   const handleSubmit = async()=>{
     const id = toast.loading("Please wait..Analysing the code")
     setResult([]);
-    const response = await axios.post(`${import.meta.env.VITE_WORKER}`, payload, {
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    })
+    
+    const response = await axios.post("https://secure-code.mohankarthi169.workers.dev/", payload)
     if(response.data.status == 200){
       setResult(response);
       toast.update(id, {
