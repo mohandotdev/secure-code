@@ -1,0 +1,26 @@
+.topbar{
+    display: flex;
+    background-color: #1A1A1A;
+    height: 64px;
+}
+
+.topbar span{
+    display: flex;
+    align-items: center;
+    width: 126px;
+    height: 24px;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    background: linear-gradient(90deg, #FFFFFF 0%, #404040 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.title{
+    margin: 20px 0px 20px 124px;
+}
