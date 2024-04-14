@@ -4,7 +4,6 @@ import {useState} from 'react';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-require("dotenv").config({ path: '././env' })
 
 function App() {
   const [payload, setPayload] = useState();
@@ -19,7 +18,7 @@ function App() {
   const handleSubmit = async()=>{
     const id = toast.loading("Please wait..Analysing the code")
     setResult([]);
-    const response = await axios.post(`${process.env.API_ENDPONT}`, payload, {
+    const response = await axios.post(`${import.meta.env.VITE_WORKER}`, payload, {
         headers: {
             'Content-Type': 'application/json'
         }
