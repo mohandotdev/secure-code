@@ -2,7 +2,7 @@
 
 SecureCode. is an application designed to help code security by pinpointing vulnerabilities.
 
-SecureCode. is an application designed to help code security by pinpointing vulnerabilities. With the help of Cloudflare AI Model, Our app detects various parameters crucial for securing your codebase:
+With the help of Cloudflare AI Model, Our app detects various parameters crucial for securing your codebase:
 
 **Vulnerability Type:** Indicate the type of vulnerability detected in the code snippet (e.g., SQL injection, cross-site scripting, buffer overflow).
 
