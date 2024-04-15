@@ -16,3 +16,42 @@ With the help of Cloudflare AI Model, Our app detects various parameters crucial
 
 **Overall Security Percentage:** Return the overall security percentage of the given code.
 
+## Tech Stack
+
+This project uses the following technologies:
+
+- **Vite**: A build tool that aims to provide a faster and leaner development experience for modern web projects.
+- **ReactJS**: A JavaScript library for building user interfaces.
+- **JavaScript**: The programming language this project is primarily written in.
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+What things you need to install the software and how to install them:
+
+- Node.js
+- npm
+
+### Installation
+
+A step-by-step series of examples that tell you how to get a development environment running:
+
+Clone the repo: 
+ ```sh
+ git clone https://github.com/mohandotdev/secure-code.git
+ ```
+Change the working directory: 
+ ```sh
+ cd client
+ ```
+Install NPM packages: 
+ ```sh
+ npm install
+ ```
+Start the development server:: 
+```sh
+npm run dev
+```
